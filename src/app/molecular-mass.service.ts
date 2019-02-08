@@ -9,6 +9,13 @@ export class MolecularMassService {
 
   constructor(private http: HttpClient) { }
 
+  showLoader() {
+    console.log('Show loader');
+  };
+  hideLoader(){
+    console.log('Hide loader');
+  };
+
   getMolecularMass() {
     return this.http.get(this.url);
   }

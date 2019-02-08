@@ -9,7 +9,15 @@ import { MolecularMassService } from '../molecular-mass.service';
 })
 export class MolecularMassComponent implements OnInit {
 
+  error: string;
   mole_mass: molecularMass;
+
+  showLoader() {
+    console.log('Show loader');
+  };
+  hideLoader(){
+    console.log('Hide loader');
+  };
 
   constructor(private massService: MolecularMassService) { }
 
@@ -18,12 +26,12 @@ export class MolecularMassComponent implements OnInit {
     .subscribe((data: molecularMass) => this.mole_mass = {
       molecule: data['molecule'],
       molecular_mass: data['molecular_mass']
-    });
+    },
+    error => this.error = error);
   }
 
   ngOnInit() {
     this.showMass();
-    console.log(this.mole_mass)
   }
 
 }

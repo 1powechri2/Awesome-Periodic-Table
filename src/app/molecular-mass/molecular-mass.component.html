@@ -1,2 +1,6 @@
-{{mole_mass.molecule}}
-{{mole_mass.molecular_mass}}
+<div *ngIf='mole_mass'>
+  <p>The molecule {{mole_mass.molecule}}</p>
+  <p>Has a mass of {{mole_mass.molecular_mass}} grams</p>
+</div>
+
+<img *ngIf='!mole_mass' src="../../assets/images/gif-loading-icon-16.gif"/>
