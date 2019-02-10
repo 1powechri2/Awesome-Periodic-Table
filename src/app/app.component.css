@@ -1,0 +1,10 @@
+#title_div {
+  display: grid;
+  height: 200px;
+  background-color: #3076B0;
+  background-image: url("../assets/images/chemistry-doodle-childrens-plain-1.jpg");
+}
+
+.title {
+  color: Black;
+}

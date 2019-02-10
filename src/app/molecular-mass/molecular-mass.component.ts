@@ -10,19 +10,14 @@ import { MolecularMassService } from '../molecular-mass.service';
 export class MolecularMassComponent implements OnInit {
 
   error: string;
+  
   mole_mass: molecularMass;
-
-  showLoader() {
-    console.log('Show loader');
-  };
-  hideLoader(){
-    console.log('Hide loader');
-  };
 
   constructor(private massService: MolecularMassService) { }
 
-  showMass() {
-    this.massService.getMolecularMass()
+  showMass(molecule: string) {
+    this.mole_mass = undefined;
+    this.massService.getMolecularMass(molecule)
     .subscribe((data: molecularMass) => this.mole_mass = {
       molecule: data['molecule'],
       molecular_mass: data['molecular_mass']
@@ -31,7 +26,10 @@ export class MolecularMassComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.showMass();
+    this.mole_mass = {
+      molecule: 'C6H12O6',
+      molecular_mass: '340.146'
+    }
   }
 
 }

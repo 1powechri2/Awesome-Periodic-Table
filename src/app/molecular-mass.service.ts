@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class MolecularMassService {
-  url = 'https://chemistry-is-awesome.herokuapp.com/api/v1/molecular_mass?molecule=C20H25N3O'
+  url = 'https://chemistry-is-awesome.herokuapp.com/api/v1/molecular_mass?molecule='
 
   constructor(private http: HttpClient) { }
 
@@ -16,7 +16,7 @@ export class MolecularMassService {
     console.log('Hide loader');
   };
 
-  getMolecularMass() {
-    return this.http.get(this.url);
+  getMolecularMass(molecule: string) {
+    return this.http.get(this.url + molecule);
   }
 }
