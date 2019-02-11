@@ -1,0 +1,212 @@
+.periodic_table {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(10, 5vw);
+}
+
+.element {
+  width: 5vw;
+  height: 5vw;
+  border: 2px solid Black;
+}
+
+.name {
+  text-align: center;
+  font-size: 0.9vw;
+}
+
+.symbol {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.weight {
+  text-align: center;
+  font-size: 0.9vw;
+}
+
+.number {
+  text-align: right;
+  font-size: 1vw;
+  padding-right: 1vw;
+  padding-top: 0.3vw;
+}
+
+#He {
+  grid-column: 18 / span 1;
+}
+
+#B {
+  grid-column: 13 / span 1;
+}
+
+#Al {
+  grid-column: 13 / span 1;
+}
+
+#Hf {
+  grid-column: 4 / span 1;
+  grid-row: 6 / span 1;
+}
+
+#La {
+  grid-column: 2 / span 1;
+  grid-row: 9 /span 1;
+}
+
+#Ce {
+  grid-column: 3 / span 1;
+  grid-row: 9 /span 1;
+}
+
+#Pr {
+  grid-column: 4 / span 1;
+  grid-row: 9 /span 1;
+}
+
+#Nd {
+  grid-column: 5 / span 1;
+  grid-row: 9 /span 1;
+}
+
+#Pm {
+  grid-column: 6 / span 1;
+  grid-row: 9 /span 1;
+}
+
+#Sm {
+  grid-column: 7 / span 1;
+  grid-row: 9 /span 1;
+}
+
+#Eu {
+  grid-column: 8 / span 1;
+  grid-row: 9 /span 1;
+}
+
+#Gd {
+  grid-column: 9 / span 1;
+  grid-row: 9 /span 1;
+}
+
+#Tb {
+  grid-column: 10 / span 1;
+  grid-row: 9 /span 1;
+}
+
+#Dy {
+  grid-column: 11 / span 1;
+  grid-row: 9 /span 1;
+}
+
+#Ho {
+  grid-column: 12 / span 1;
+  grid-row: 9 /span 1;
+}
+
+#Er {
+  grid-column: 13 / span 1;
+  grid-row: 9 /span 1;
+}
+
+#Tm {
+  grid-column: 14 / span 1;
+  grid-row: 9 /span 1;
+}
+
+#Yb {
+  grid-column: 15 / span 1;
+  grid-row: 9 /span 1;
+}
+
+#Lu {
+  grid-column: 16 / span 1;
+  grid-row: 9 /span 1;
+}
+
+#Ac {
+  grid-column: 2 / span 1;
+  grid-row: 10 /span 1;
+}
+
+#Th {
+  grid-column: 3 / span 1;
+  grid-row: 10 /span 1;
+}
+
+#Pa {
+  grid-column: 4 / span 1;
+  grid-row: 10 /span 1;
+}
+
+#U {
+  grid-column: 5 / span 1;
+  grid-row: 10 /span 1;
+}
+
+#Np {
+  grid-column: 6 / span 1;
+  grid-row: 10 /span 1;
+}
+
+#Pu {
+  grid-column: 7 / span 1;
+  grid-row: 10 /span 1;
+}
+
+#Am {
+  grid-column: 8 / span 1;
+  grid-row: 10 /span 1;
+}
+
+#Cm {
+  grid-column: 9 / span 1;
+  grid-row: 10 /span 1;
+}
+
+#Bk {
+  grid-column: 10 / span 1;
+  grid-row: 10 /span 1;
+}
+
+#Cf {
+  grid-column: 11 / span 1;
+  grid-row: 10 /span 1;
+}
+
+#Es {
+  grid-column: 12 / span 1;
+  grid-row: 10 /span 1;
+}
+
+#Fm {
+  grid-column: 13 / span 1;
+  grid-row: 10 /span 1;
+}
+
+#Md {
+  grid-column: 14 / span 1;
+  grid-row: 10 /span 1;
+}
+
+#No {
+  grid-column: 15 / span 1;
+  grid-row: 10 /span 1;
+}
+
+#Lr {
+  grid-column: 16 / span 1;
+  grid-row: 10 /span 1;
+}
+
+.lanthanoids {
+  background-color: red;
+  grid-column: 3 / span 1;
+  grid-row: 6 / span 1;
+}
+
+.actinoids {
+  background-color: red;
+  grid-column: 3 / span 1;
+  grid-row: 7 / span 1;
+}

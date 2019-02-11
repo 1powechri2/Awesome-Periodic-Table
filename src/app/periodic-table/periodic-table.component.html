@@ -1,0 +1,16 @@
+<div class='periodic_table'>
+  <div *ngFor='let element of elements' id='{{element.symbol}}' class='element'>
+      <p class='name'>{{element.name}}</p>
+      <p class='weight'>{{element.atomic_weight}}</p>
+      <p class='symbol'>{{element.symbol}}</p>
+      <p class='number'>{{element.number}}</p>
+    </div>
+</div>
+<div class='lanthanoids'>
+  <p class='number'>57-71</p>
+  <p class='name'>Lanthanoides</p>
+</div>
+<div class='actinoids'>
+  <p class='number'>89-103</p>
+  <p class='name'>Actinoids</p>
+</div>
