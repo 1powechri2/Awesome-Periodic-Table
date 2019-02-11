@@ -5,10 +5,9 @@
 <p>There's One Catch, You Must Enter</p>
 <p>The Molecular Formula Correctly</p>
 <p>Follow the Example of Glucose Below!</p>
+<input #new_molecule placeholder="C6H12O6"><button (click)="showMass(new_molecule.value)">Calculate Mass</button><br>
+<img *ngIf='!mole_mass' src="../../assets/images/gif-loading-icon-16.gif" width='100'/>
 <div *ngIf='mole_mass'>
   <p>The molecule {{mole_mass.molecule}}</p>
   <p>Has a mass of {{mole_mass.molecular_mass}} grams</p>
 </div>
-<input #new_molecule><button (click)="showMass(new_molecule.value)">Calculate Mass</button>
-
-<img *ngIf='!mole_mass' src="../../assets/images/gif-loading-icon-16.gif"/>

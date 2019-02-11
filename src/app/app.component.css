@@ -1,10 +1,15 @@
 #title_div {
   display: grid;
-  height: 200px;
-  background-color: #3076B0;
+  height: 10vw;
   background-image: url("../assets/images/chemistry-doodle-childrens-plain-1.jpg");
+  background-size: 30% 150%;
+  border-bottom: 5px solid Black;
 }
 
 .title {
   color: Black;
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 8vw;
+  margin-top: 10px;
+  margin-left: 20px;
 }
