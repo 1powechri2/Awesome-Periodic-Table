@@ -10,8 +10,10 @@ import { MolecularMassService } from '../molecular-mass.service';
 export class MolecularMassComponent implements OnInit {
 
   error: string;
-  
+
   mole_mass: molecularMass;
+
+  clickSwitch: Boolean = true;
 
   constructor(private massService: MolecularMassService) { }
 
@@ -23,6 +25,7 @@ export class MolecularMassComponent implements OnInit {
       molecular_mass: data['molecular_mass']
     },
     error => this.error = error);
+    this.clickSwitch = false;
   }
 
   ngOnInit() {

@@ -1,0 +1,116 @@
+.element, .lanthanoids, .actinoids {
+  width: 5vw;
+  height: 5vw;
+}
+
+.modElement {
+  width: 5vw;
+  height: 5vw;
+  border: 2px solid Black;
+  border-bottom: 8px solid Black;
+  border-left: 8px solid Black;
+  background-color: #FFF6FF;
+}
+
+.name {
+  text-align: center;
+  font-size: 0.9vw;
+}
+
+.symbol {
+  text-align: center;
+  font-size: 2vw;
+  font-family: 'Comfortaa', cursive;
+}
+
+.weight {
+  text-align: center;
+  font-size: 0.9vw;
+}
+
+.number {
+  text-align: right;
+  font-size: 1vw;
+  padding-right: 1vw;
+  padding-top: 0.3vw;
+}
+
+.numbers {
+  text-align: center;
+  font-size: 1vw;
+  padding-top: 0.3vw;
+}
+#H, #C, #N, #O, #P, #S, #Se {
+  border: 2px solid #008BFF;
+  border-radius: 5px;
+}
+
+#Li, #Na, #K, #Rb, #Cs, #Fr {
+  border: 2px solid #FF0000;
+  border-radius: 5px;
+}
+
+#Be, #Mg, #Ca, #Sr, #Ba, #Ra {
+  border: 2px solid #FF7F00;
+  border-radius: 5px;
+}
+
+#Sc, #Y, #Ti, #Zr, #Hf, #Rf,
+#V, #Nb, #Ta, #Db, #Cr, #Mo,
+#W, #Sg, #Mn, #Tc, #Re, #Hs, #Bh,
+#Fe, #Ru, #Os, #Ir, #Mt, #Ni, #Co, #Rh, #Pd,
+#Pt, #Ds, #Cu, #Ag, #Au, #Rg,
+#Zn, #Cd, #Hg, #Cn, #Uub, #Uuq, #Uut,
+#Uup, #Uuh, #Uus, #Uuo {
+  border: 2px solid #FFFF00;
+  border-radius: 5px;
+}
+
+#B, #Si, #Ge, #As, #Sb, #Te,
+#Po {
+  border: 2px solid #0000FF;
+  border-radius: 5px;
+}
+
+#Al, #Ga, #In, #Sn, #Tl, #Pb,
+#Bi, #Nh, #Fl, #Mc, #Lv {
+  border: 2px solid #00FF00;
+  border-radius: 5px;
+}
+
+#F, #Cl, #Br, #I, #At, #Ts {
+  border: 2px solid #9400D3;
+  border-radius: 5px;
+}
+
+#He, #Ne, #Ar, #Kr, #Xe, #Rn, #Og {
+  border: 2px solid #4B0082;
+  border-radius: 5px;
+}
+
+#La, #Ce, #Pr, #Nd, #Pm, #Sm, #Eu,
+#Gd, #Tb, #Dy, #Ho, #Er, #Tm, #Yb, #Lu {
+  border: 2px solid #D0FF00;
+  border-radius: 5px;
+}
+
+#Ac, #Th, #Pa, #U, #Np, #Pu, #Am,
+#Cm, #Bk, #Cf, #Es, #Fm, #Md, #No, #Lr {
+  border: 2px solid #83A100;
+  border-radius: 5px;
+}
+
+
+.lanthanoids {
+  grid-column: 3 / span 1;
+  grid-row: 6 / span 1;
+  border: 2px solid #D0FF00;
+  border-radius: 5px;
+}
+
+.actinoids {
+  grid-column: 3 / span 1;
+  grid-row: 7 / span 1;
+  border: 2px solid #83A100;
+  border-radius: 5px;
+}

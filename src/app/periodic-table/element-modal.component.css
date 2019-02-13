@@ -1,0 +1,92 @@
+.element_modal {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.modal_content {
+  display: grid;
+  background-color: grey;
+  margin-top: 40vh;
+  height: 45vh;
+  width: 40vw;
+  font-family: 'Comfortaa', cursive;
+  padding: 1vw;
+  border-radius: 10px;
+}
+
+.element_modal_container {
+  width: 10vw;
+  height: 10vw;
+  justify-self: center;
+  border: 2px Solid Orange;
+  border-radius: 10px;
+  margin-bottom: 1vh;
+}
+
+.modal_close {
+  font-size: 2vw;
+  text-align: right;
+}
+
+
+.modal-name {
+  text-align: center;
+  margin-top: 1vh;
+}
+
+.modal-weight {
+  text-align: center;
+}
+
+.modal-symbol {
+  font-size: 5vh;
+  text-align: center;
+  margin-top: 1vh;
+}
+
+.modal-number {
+  text-align: right;
+  margin-right: 1vw;
+}
+
+.modal-appearance {
+
+}
+
+.modal-category {
+
+}
+
+.modal-phase {
+
+}
+
+.modal-boiling-point {
+
+}
+
+.modal-melting-point {
+
+}
+
+.modal-electron-config {
+
+}
+
+.modal-group-block {
+
+}
+
+.modal-electronegativity {
+
+}
+
+.modal-png {
+  justify-self: end;
+}

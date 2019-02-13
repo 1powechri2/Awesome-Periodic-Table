@@ -1,35 +1,16 @@
+.periodic-table-container {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 15vh;
+}
 .periodic_table {
+  width: 100%;
+  margin-top: 3vh;
   display: grid;
   grid-template-columns: repeat(18, 1fr);
-  grid-template-rows: repeat(10, 5vw);
-}
-
-.element {
-  width: 5vw;
-  height: 5vw;
-  border: 2px solid Black;
-}
-
-.name {
-  text-align: center;
-  font-size: 0.9vw;
-}
-
-.symbol {
-  text-align: center;
-  font-size: 2vw;
-}
-
-.weight {
-  text-align: center;
-  font-size: 0.9vw;
-}
-
-.number {
-  text-align: right;
-  font-size: 1vw;
-  padding-right: 1vw;
-  padding-top: 0.3vw;
+  grid-template-rows: repeat(10, 5.6vw);
+  justify-items: center;
+  cursor: default;
 }
 
 #He {
@@ -197,16 +178,4 @@
 #Lr {
   grid-column: 16 / span 1;
   grid-row: 10 /span 1;
-}
-
-.lanthanoids {
-  background-color: red;
-  grid-column: 3 / span 1;
-  grid-row: 6 / span 1;
-}
-
-.actinoids {
-  background-color: red;
-  grid-column: 3 / span 1;
-  grid-row: 7 / span 1;
 }

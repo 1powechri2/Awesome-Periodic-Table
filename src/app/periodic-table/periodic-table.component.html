@@ -1,16 +1,39 @@
-<div class='periodic_table'>
-  <div *ngFor='let element of elements' id='{{element.symbol}}' class='element'>
-      <p class='name'>{{element.name}}</p>
-      <p class='weight'>{{element.atomic_weight}}</p>
-      <p class='symbol'>{{element.symbol}}</p>
-      <p class='number'>{{element.number}}</p>
+<div class='periodic-table-container'>
+  <div class='periodic_table'>
+    <div *ngFor='let element of elements' (mouseenter)='change_div($event)'
+    (mouseleave)='reset_div($event)' (click)='createModal(element.symbol)' id='{{element.symbol}}' class='element'>
+        <p class='name'>{{element.name}}</p>
+        <p class='weight'>{{element.atomic_weight}}</p>
+        <p class='symbol'>{{element.symbol}}</p>
+        <p class='number'>{{element.number}}</p>
     </div>
-</div>
-<div class='lanthanoids'>
-  <p class='number'>57-71</p>
-  <p class='name'>Lanthanoides</p>
-</div>
-<div class='actinoids'>
-  <p class='number'>89-103</p>
-  <p class='name'>Actinoids</p>
+    <div class='lanthanoids'>
+      <p class='name'>Lanthanoide Series</p>
+      <p class='numbers'>57-71</p>
+    </div>
+    <div class='actinoids'>
+      <p class='name'>Actinoid Series</p>
+      <p class='numbers'>89-103</p>
+    </div>
+    <div *ngIf='hoverSwitch' class='element_modal'>
+      <div class='modal_content'>
+        <p class='modal_close' (click)='modalClose()'>CLOSE</p>
+        <div class='element_modal_container'>
+          <p class='modal-name'>{{el.name}}</p>
+          <p class='modal-weight'>{{el.atomic_weight}}</p>
+          <p class='modal-symbol'>{{el.symbol}}</p>
+          <p class='modal-number'>{{el.number}}</p>
+        </div>
+        <p class='modal-appearance'>Apperance: {{el.appearance}}</p>
+        <p class='modal-category'>Category: {{el.element_category}}</p>
+        <p class='modal-phase'>Phase: {{el.phase}}</p>
+        <p class='modal-boiling-point'>Boiling Point: {{el.boiling_point}}</p>
+        <p class='modal-melting-point'>Melting Point: {{el.melting_point}}</p>
+        <p class='modal-electron-config'>Electron Configuration: {{el.electron_configuration}}</p>
+        <p class='modal-group-block'>Group Bolock: {{el.group_block}}</p>
+        <p class='modal-electronegativity'>Electronegativity: {{el.electronegativity}}</p>
+        <img class='modal-png' src="../../assets/images/43-512.png" width='60' height='60'/>
+      </div>
+    </div>
+  </div>
 </div>
