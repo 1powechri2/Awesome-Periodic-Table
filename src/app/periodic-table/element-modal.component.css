@@ -12,8 +12,8 @@
 .modal_content {
   display: grid;
   background-color: grey;
-  margin-top: 40vh;
-  height: 45vh;
+  margin-top: 30vh;
+  height: 55vh;
   width: 40vw;
   font-family: 'Comfortaa', cursive;
   padding: 1vw;
@@ -29,6 +29,10 @@
   margin-bottom: 1vh;
 }
 
+.element-desriptors {
+  line-height: 3vh;
+}
+
 .modal_close {
   font-size: 2vw;
   text-align: right;
@@ -38,14 +42,17 @@
 .modal-name {
   text-align: center;
   margin-top: 1vh;
+  font-size: 1.2vw;
 }
 
 .modal-weight {
+  margin-top: 1vh;
   text-align: center;
+  font-size: 1.2vw;
 }
 
 .modal-symbol {
-  font-size: 5vh;
+  font-size: 4vw;
   text-align: center;
   margin-top: 1vh;
 }
@@ -53,6 +60,7 @@
 .modal-number {
   text-align: right;
   margin-right: 1vw;
+  font-size: 1vw;
 }
 
 .modal-appearance {

@@ -1,5 +1,19 @@
-<div class='periodic-table-container'>
+<div *ngIf='elements' class='periodic-table-container'>
   <div class='periodic_table'>
+    <div class='bullets1'>
+      <span class='bullet' id='nonmetal'>&#x021DB; </span><span> Nonmetal</span><br>
+      <span class='bullet' id='alkali-metal'>&#x021DB; </span><span> Alkali Metal</span><br>
+      <span class='bullet' id='alkaline-earth-metal'>&#x021DB; </span><span> Alkaline Earth Metal</span><br>
+      <span class='bullet' id='transition-metal'>&#x021DB; </span><span> Transition Metal</span><br>
+      <span class='bullet' id='post-transition-metal'>&#x021DB; </span><span> Post Transition Metal</span><br>
+    </div>
+    <div class='bullets2'>
+      <span class='bullet' id='metalloid'>&#x021DB; </span><span> Metalloid</span><br>
+      <span class='bullet' id='halogen'>&#x021DB; </span><span> Halogen</span><br>
+      <span class='bullet' id='noble-gas'>&#x021DB; </span><span> Noble Gas</span><br>
+      <span class='bullet' id='lanthanide'>&#x021DB; </span><span> Lanthanide</span><br>
+      <span class='bullet' id='actinide'>&#x021DB; </span><span> Actinide</span><br>
+    </div>
     <div *ngFor='let element of elements' (mouseenter)='change_div($event)'
     (mouseleave)='reset_div($event)' (click)='createModal(element.symbol)' id='{{element.symbol}}' class='element'>
         <p class='name'>{{element.name}}</p>
@@ -24,16 +38,19 @@
           <p class='modal-symbol'>{{el.symbol}}</p>
           <p class='modal-number'>{{el.number}}</p>
         </div>
-        <p class='modal-appearance'>Apperance: {{el.appearance}}</p>
-        <p class='modal-category'>Category: {{el.element_category}}</p>
-        <p class='modal-phase'>Phase: {{el.phase}}</p>
-        <p class='modal-boiling-point'>Boiling Point: {{el.boiling_point}}</p>
-        <p class='modal-melting-point'>Melting Point: {{el.melting_point}}</p>
-        <p class='modal-electron-config'>Electron Configuration: {{el.electron_configuration}}</p>
-        <p class='modal-group-block'>Group Bolock: {{el.group_block}}</p>
-        <p class='modal-electronegativity'>Electronegativity: {{el.electronegativity}}</p>
+        <div class='element-desriptors'>
+          <p class='modal-appearance'>Apperance: {{el.appearance}}</p>
+          <p class='modal-category'>Category: {{el.element_category}}</p>
+          <p class='modal-phase'>Phase: {{el.phase}}</p>
+          <p class='modal-boiling-point'>Boiling Point: {{el.boiling_point}}</p>
+          <p class='modal-melting-point'>Melting Point: {{el.melting_point}}</p>
+          <p class='modal-electron-config'>Electron Configuration: {{el.electron_configuration}}</p>
+          <p class='modal-group-block'>Group Bolock: {{el.group_block}}</p>
+          <p class='modal-electronegativity'>Electronegativity: {{el.electronegativity}}</p>
+        </div>
         <img class='modal-png' src="../../assets/images/43-512.png" width='60' height='60'/>
       </div>
     </div>
   </div>
 </div>
+<img *ngIf='!elements' src="../../assets/images/gif-loading-icon-16.gif" width='500'/>

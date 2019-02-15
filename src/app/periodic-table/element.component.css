@@ -3,15 +3,6 @@
   height: 5vw;
 }
 
-.modElement {
-  width: 5vw;
-  height: 5vw;
-  border: 2px solid Black;
-  border-bottom: 8px solid Black;
-  border-left: 8px solid Black;
-  background-color: #FFF6FF;
-}
-
 .name {
   text-align: center;
   font-size: 0.9vw;
@@ -113,4 +104,10 @@
   grid-row: 7 / span 1;
   border: 2px solid #83A100;
   border-radius: 5px;
+}
+
+.modElement {
+  width: 5vw;
+  height: 5vw;
+  background-color: #C1C7CC;
 }

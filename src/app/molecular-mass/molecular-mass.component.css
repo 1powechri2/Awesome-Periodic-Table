@@ -1,9 +1,46 @@
 p, h1 {
   font-family: 'Walter Turncoat', cursive;
+  padding-left: 1vw;
+}
+
+.mass-calc-container {
+  margin-top: 2vh;
+  display: grid;
+  justify-content: center;
+}
+
+.mass_calc_header {
+  text-align: center;
+  border-bottom: 3px Solid Green;
+  border-bottom-style: double;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  font-size: 4vw;
 }
 
 .mass_calculator {
+  display: grid;
   border: 3px solid Black;
-  width: 35vw;
+  width: 45vw;
   margin: 5px;
+  font-size: 2vw;
+}
+
+#molecule_input {
+  width: 40%;
+  height: 5vw;
+  border: 2px solid red;
+  border-radius: 5px;
+  background-color: #C1C7CC;
+  font-size: 4vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+}
+
+#mass-btn {
+  width: 40%;
+  margin-left: 1vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }

@@ -1,17 +1,19 @@
-<div class='mass_calculator'>
-  <h1>This is a Molecular Mass Calculator!</h1>
-  <p>Enter a Molecule of Your Choice</p>
-  <p>and Calculate how many Grams Equal</p>
-  <p>One Mole</p>
-  <p>There's One Catch, You Must Enter</p>
-  <p>The Molecular Formula Correctly</p>
-  <div *ngIf='clickSwitch'>
-    <p>Follow the Example of Glucose Below!</p>
-  </div>
-  <input #new_molecule placeholder="Example C6H12O6"><button (click)="showMass(new_molecule.value)">Calculate Mass</button><br>
-  <img *ngIf='!mole_mass' src="../../assets/images/gif-loading-icon-16.gif" width='100'/>
-  <div *ngIf='mole_mass'>
-    <p>The molecule {{mole_mass.molecule}}</p>
-    <p>Has a mass of {{mole_mass.molecular_mass}} grams</p>
+<h1 class='mass_calc_header'>Check Out This Molecular Mass Calculator</h1>
+<div class='mass-calc-container'>
+  <div class='mass_calculator'>
+    <p>Enter a Molecule of Your Choice</p>
+    <p>and Calculate how many Grams Equal</p>
+    <p>One Mole.</p>
+    <p>There's One Catch, You Must Enter</p>
+    <p>The Molecular Formula Correctly</p>
+    <div *ngIf='clickSwitch'>
+      <p>Follow the Example of Glucose Below!</p>
+    </div>
+    <input #new_molecule id='molecule_input' placeholder="C6H12O6"><button id='mass-btn'(click)="showMass(new_molecule.value)">Calculate Mass</button>
+    <img *ngIf='!mole_mass' src="../../assets/images/gif-loading-icon-16.gif" width='100'/>
+    <div *ngIf='mole_mass'>
+      <p>The molecule {{mole_mass.molecule}}</p>
+      <p>Has a mass of {{mole_mass.molecular_mass}} grams</p>
+    </div>
   </div>
 </div>
