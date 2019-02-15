@@ -1,4 +1,5 @@
 <div *ngIf='elements' class='periodic-table-container'>
+  <h1 class='periodic-table-header'>THE PERIODIC TABLE OF THE ELEMENTS</h1>
   <div class='periodic_table'>
     <div class='bullets1'>
       <span class='bullet' id='nonmetal'>&#x021DB; </span><span> Nonmetal</span><br>
@@ -53,4 +54,7 @@
     </div>
   </div>
 </div>
-<img *ngIf='!elements' src="../../assets/images/gif-loading-icon-16.gif" width='500'/>
+<div *ngIf='!elements' class='table-spinner'>
+  <p>Periodic Table Is Loading...</p>
+  <img src="../../assets/images/gif-loading-icon-16.gif" width='500'/>
+</div>

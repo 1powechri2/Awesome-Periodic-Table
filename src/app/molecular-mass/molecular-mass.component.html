@@ -10,7 +10,7 @@
       <p>Follow the Example of Glucose Below!</p>
     </div>
     <input #new_molecule id='molecule_input' placeholder="C6H12O6"><button id='mass-btn'(click)="showMass(new_molecule.value)">Calculate Mass</button>
-    <img *ngIf='!mole_mass' src="../../assets/images/gif-loading-icon-16.gif" width='100'/>
+    <img *ngIf='!mole_mass' src="../../assets/images/gif-loading-icon-16.gif" width='100' class='mass-spinner'/>
     <div *ngIf='mole_mass'>
       <p>The molecule {{mole_mass.molecule}}</p>
       <p>Has a mass of {{mole_mass.molecular_mass}} grams</p>
