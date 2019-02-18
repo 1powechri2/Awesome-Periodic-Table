@@ -1,0 +1,26 @@
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  height: 5vw;
+  background-color: black;
+  margin-top: 2vw;
+}
+
+.footer-text {
+  grid-column: 1 / span 9;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+  font-size: 2vw;
+  align-self: center;
+  margin-left: 2vh;
+}
+
+.linkedin {
+  justify-self: center;
+  margin-top: 4px;
+}
+
+.linkedin-image {
+  width: 4vw;
+  height: 4vw;
+}
