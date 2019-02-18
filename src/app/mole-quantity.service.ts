@@ -10,7 +10,7 @@ export class MoleQuantityService {
   constructor(private http: HttpClient) {}
 
   getMoleQuantity(molecule: string, weight: string) {
-    this.url = `https://chemistry-is-awesome.herokuapp.com/api/v1/molecular_quantity?molecule=${molecule}&weight=7${weight}`
+    this.url = `https://chemistry-is-awesome.herokuapp.com/api/v1/molecular_quantity?molecule=${molecule}&weight=${weight}`
     return this.http.get(this.url);
   }
 }
