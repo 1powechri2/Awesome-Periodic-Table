@@ -1,0 +1,21 @@
+<h1 class='mass_calc_header'>Check Out This Mole Quantity Calculator</h1>
+<div class='mass-calc-container'>
+  <img class='modal-png' src="../../assets/images/43-512.png" width='120' height='120'/>
+  <div class='mass_calculator'>
+    <p>Enter a Molecule of Your Choice</p>
+    <p>and the Weight in Grams You Wish</p>
+    <p>to Find The Mole Quantity for.</p>
+    <p>There's One Catch, You Must Enter</p>
+    <p>The Molecular Formula Correctly.</p>
+    <span class='mole_quantity_span'>Molecule</span><input #new_molecule id='molecule_input'>
+    <span class='mole_quantity_span'>Weight</span><input #new_weight id='molecule_input'>
+    <button id='mass-btn'(click)="showQuantity(new_molecule.value, new_weight.value)">Calculate Mass</button>
+    <img *ngIf='spinner_switch' src="../../assets/images/gif-loading-icon-16.gif" width='100' class='mass-spinner'/>
+    <div *ngIf='mole_quantity'>
+      <p>The molecule {{mole_quantity.molecule}}</p>
+      <p>Has a mass of {{mole_quantity.molecular_mass}}</p>
+      <p>The Given Weight Was {{mole_quantity.given_weight}}</p>
+      <p>Which Amounts to {{mole_quantity.number_of_moles}} Moles</p>
+    </div>
+  </div>
+</div>

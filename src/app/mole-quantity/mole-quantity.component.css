@@ -9,7 +9,7 @@ p, h1 {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
-  margin-left: 10vh;
+  margin-right: 10vh;
 }
 
 .mass_calc_header {
@@ -27,6 +27,11 @@ p, h1 {
   width: 45vw;
   margin: 5px;
   font-size: 2vw;
+}
+
+.mole_quantity_span {
+  margin-top: 1vh;
+  margin-left: 2vh;
 }
 
 #molecule_input {
@@ -49,5 +54,5 @@ p, h1 {
 }
 
 .mass-spinner {
-  padding-left: 4vw;
+  padding-left: 6vw;
 }

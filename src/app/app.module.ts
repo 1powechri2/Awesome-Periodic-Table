@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from  '@angular/common/http';
 import { MolecularMassComponent } from './molecular-mass/molecular-mass.component';
 import { PeriodicTableComponent } from './periodic-table/periodic-table.component';
+import { MoleQuantityComponent } from './mole-quantity/mole-quantity.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MolecularMassComponent,
-    PeriodicTableComponent
+    PeriodicTableComponent,
+    MoleQuantityComponent
   ],
   imports: [
     BrowserModule,
